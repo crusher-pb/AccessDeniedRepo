@@ -36,9 +36,9 @@ The authors of this project who deserve the real credits for this application ar
 <a id="tecst"></a>
 ## 5. Tech-stack
 The major tech-stack being used is:
-Android app development using Android Studio
-UI design using figma
-Google APIs
+Android app development using Android Studio,
+UI design using figma,
+Google APIs,
 SQLite for local storage
 
 <a id="demo"></a>
