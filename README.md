@@ -29,7 +29,7 @@ The authors of this project who deserve the real credits for this application ar
       Skillset: Android app-development
 ## c. Poritosh Bardhan
       Skillset: Android app-development
-## d. Promit Revar:
+## d. Promit Revar
       Skillset: Web-development backend, Web-development Frontend, SQLite
       
 
