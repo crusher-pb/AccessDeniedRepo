@@ -23,7 +23,7 @@ The major motivation for such an application is the difficulties faced by people
 <a id="creds"></a>
 ## 4. Credits
 The authors of this project who deserve the real credits for this application are:
-## a. Sunaina Agarwal: 
+## a. Sunaina Agarwal
       Skillset: Front-end web-development, UI/UX.
 ## b. Pranchal Sihare
       Skillset: Android app-development
