@@ -63,48 +63,6 @@ public class MapsActivity extends FragmentActivity implements
         mapFragment.getMapAsync(this);
     }
 
-    public void onClick(View v){
-        switch(v.getId()){
-            case R.id.searchbtn:
-                EditText addressfield=findViewById(R.id.location_search);
-                String address=addressfield.getText().toString();
-                List<Address> addressList = null;
-                MarkerOptions usermarkerOptions=new MarkerOptions();
-
-                if(!TextUtils.isEmpty(address)){
-                    Geocoder geocoder=new Geocoder(this);
-
-                    try {
-                        addressList =geocoder.getFromLocationName(address, 0);
-
-                        if(addressList!=null){
-                            for(int i=0;i<addressList.size();i++){
-                                Address userAddress= addressList.get(i);
-                                LatLng latLng1=new LatLng(userAddress.getLatitude(), userAddress.getLongitude());
-
-                                usermarkerOptions.position(latLng1);
-                                usermarkerOptions.title(address);
-                                usermarkerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE));
-
-                                mMap.addMarker(usermarkerOptions);
-                                mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng1));
-                                mMap.animateCamera(CameraUpdateFactory.zoomTo(10));
-                            }
-                        }
-                        else {
-                            Toast.makeText(this, "No such location", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                    catch (IOException e){
-                        e.printStackTrace();
-                    }
-                }
-                else{
-                    Toast.makeText(this, "Please write location name", Toast.LENGTH_SHORT).show();
-                }
-        }
-    }
-
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
