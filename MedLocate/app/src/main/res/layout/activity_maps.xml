@@ -19,28 +19,47 @@
         android:layout_height="wrap_content"
         android:id="@+id/iconstab">
 
+        <EditText
+            android:id="@+id/location_search"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:hint="Location Name ...." />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:id="@+id/search_address"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:onClick="onClick"
+            android:src="@mipmap/search" />
+
+
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/hospitalicon"
+            android:id="@+id/hospitals_nearby"
             android:layout_alignParentBottom="true"
             android:layout_toStartOf="@+id/storeicon"
+            android:onClick="onClick"
             android:src="@mipmap/hospital"/>
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/storeicon"
+            android:id="@+id/stores_nearby"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
+            android:onClick="onClick"
             android:layout_marginEnd="10dp"
             android:src="@mipmap/school"/>
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+
+
+
     </RelativeLayout>
 
 </RelativeLayout>
