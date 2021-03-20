@@ -15,6 +15,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MedLocate">
+<<<<<<< HEAD
         <activity android:name=".ProfileActivity"></activity>
         <activity android:name=".SignupActivity" />
         <activity android:name=".LoginActivity">
@@ -24,6 +25,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+=======
+        <activity android:name=".SignupActivity"></activity>
+        <activity android:name=".LoginActivity" ></activity>
+>>>>>>> 7e059f813b7a61ceb0ef1e9dad5d289c3913a158
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -38,7 +43,18 @@
 
         <activity
             android:name=".MapsActivity"
+<<<<<<< HEAD
             android:label="@string/title_activity_maps"></activity>
+=======
+            android:label="@string/title_activity_maps">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+>>>>>>> 7e059f813b7a61ceb0ef1e9dad5d289c3913a158
     </application>
 
 </manifest>
